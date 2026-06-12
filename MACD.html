@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<title>MA Construction & Designs</title>
+
+<style>
+
+body{
+<div id="mainContent" style="display:none;">
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#111;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    z-index:9999;
+}
+
+.spinner{
+    width:60px;
+    height:60px;
+    border:6px solid #333;
+    border-top:6px solid #ff9800;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin-top:20px;
+}
+.loader-logo{
+    width:350px;
+    max-width:80%;
+    animation:logoZoom 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes logoZoom{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+
+header img{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(255,152,0,0.25);
+}
+
+
+
+header{
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('construction.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    padding:80px 20px;
+}
+
+h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.tagline{
+    font-size:16px;
+    font-weight:300;
+    letter-spacing:3px;
+    color:#cfcfcf;
+}
+
+.container{
+    padding:20px;
+}
+
+
+.btn{
+    display:block;
+    width:280px;
+    margin:15px auto;
+    padding:16px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#ff9800,#ffb74d);
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 6px 15px rgba(255,152,0,0.35);
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 12px 25px rgba(255,152,0,0.5);
+}
+
+.btn:active{
+    transform:scale(0.96);
+}
+
+
+
+</style>
+</head>
+</div>
+<body>
+
+<div id="loader">
+    <img src="MACDlogo.png" class="loader-logo">
+
+    <h2 style="color:white;font-size:40px;">
+        MA Construction & Designs
+    </h2>
+
+    <div class="spinner"></div>
+</div>
+
+<header>
+    <img src="MACDlogo.png" width="400" alt="MA Construction Logo">
+
+    <h1>
+        MA Construction
+        <span style="color:#ff9800;">& Designs</span>
+    </h1>
+
+    <p class="tagline">
+        CONSTRUCTION • INTERIORS • DESIGN
+    </p>
+</header>
+
+<div class="container">
+
+    <a class="btn" href="tel:+916381703191">📞 Call Us</a>
+
+    <a class="btn" href="https://wa.me/916381703191">💬 WhatsApp</a>
+
+    <a class="btn" href="mailto:info@maconstructiondesign.com">📧 Email Us</a>
+
+    <a class="btn" href="https://maconstructiondesign.com">🌐 Visit Website</a>
+
+    <a class="btn" href="https://maps.app.goo.gl/xFssP3eBsLknkrr16?g_st=iw">📍 Location</a>
+
+</div>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        MA Construction & Designs specializes in residential,
+        commercial construction, interior design,
+        renovation and architectural planning.
+    </p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+
+    <p>🏗 Construction</p>
+    <p>🏠 House Planning</p>
+    <p>🎨 Interior Design</p>
+    <p>🛠 Renovation</p>
+    <p>📐 2D & 3D Design</p>
+</section>
+
+<section>
+    <h2>Follow Us</h2>
+
+    <a href="https://www.instagram.com/m.a._constructions" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="50">
+        <br><br>
+        Follow us on Instagram
+    </a>
+</section>
+
+</div>
+
+<script>
+window.onload = function(){
+    setTimeout(function(){
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+    },2500);
+};
+</script>
+
+</body>
+</html>
